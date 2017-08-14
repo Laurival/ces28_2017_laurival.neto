@@ -1,1 +1,0 @@
-Repositório onde os arquivos de sala serão postados.
