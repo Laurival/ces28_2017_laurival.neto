@@ -1,0 +1,1 @@
+Repositório onde os arquivos das Listas de Sala serão postados.
