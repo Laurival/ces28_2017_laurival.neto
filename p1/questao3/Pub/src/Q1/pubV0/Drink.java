@@ -9,11 +9,13 @@ public class Drink {
     private static final String BACARDI_SPECIAL = "bacardi_special";
     LinkedHashMap<String, Integer> recipes = new LinkedHashMap<String, Integer>();
     
+    //Contrutor
     public Drink(String drinkName) {
 		super();
 		this.drinkName = drinkName;
 	}
-        
+    
+    
     public int getDrinkPrice(){
     	if(recipes.containsKey(drinkName)){
 			return recipes.get(drinkName);
@@ -22,6 +24,8 @@ public class Drink {
     		throw new RuntimeException("No such drink exists");
     	}
     }
+    
+    // Encapsulamentos
 	public int[] getIngredients() {
 		return ingredients;
 	}
