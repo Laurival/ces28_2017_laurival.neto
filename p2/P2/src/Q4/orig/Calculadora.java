@@ -1,11 +1,16 @@
 package Q4.orig;
 
-public class Calculadora {
-	public void imprime(float totalDespesa) {
-		String conteudo = "Relatório de Despesas";
-		conteudo+=("\n Total das despesas:" + totalDespesa);
+import java.util.Iterator;
 
-		SistemaOperacional so = new SistemaOperacional();
-		so.getDriverImpressao().Imprimir(conteudo);
+public class Calculadora {
+	// Agora, calculadora calcula o total de despesas Item A
+	public float calcularTotalDespesa(Iterator<Despesa> despesas) {
+		float totalDespesa = 0.0f;
+		while (despesas.hasNext()) {
+			Despesa desp = despesas.next();
+			float despesa = desp.getDespesa();
+			totalDespesa += despesa;
+		}
+		return totalDespesa;
 	}
 }

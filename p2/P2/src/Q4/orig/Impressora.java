@@ -1,6 +1,7 @@
 package Q4.orig;
 
-public class Impressora {
+public class Impressora implements InterfaceImpressora{
+	//Não modificada 
 	public void Imprimir(String conteudo) {
 		if (conteudo==null) {
 			throw new IllegalArgumentException("conteudo nulo");
